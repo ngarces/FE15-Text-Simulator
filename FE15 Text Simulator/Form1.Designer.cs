@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.richTextBox_Text1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox_Name = new System.Windows.Forms.RichTextBox();
-            this.button_Reload = new System.Windows.Forms.Button();
             this.button_Save = new System.Windows.Forms.Button();
             this.comboBox_Left = new System.Windows.Forms.ComboBox();
             this.comboBox_Mid = new System.Windows.Forms.ComboBox();
@@ -50,10 +49,12 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.checkBox_Background = new System.Windows.Forms.CheckBox();
             this.label_Line1 = new System.Windows.Forms.Label();
             this.label_Line2 = new System.Windows.Forms.Label();
             this.richTextBox_Text2 = new System.Windows.Forms.RichTextBox();
+            this.comboBox_Background = new System.Windows.Forms.ComboBox();
+            this.label_Background = new System.Windows.Forms.Label();
+            this.checkBox_HideText = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,6 +66,7 @@
             this.richTextBox_Text1.Size = new System.Drawing.Size(340, 20);
             this.richTextBox_Text1.TabIndex = 2;
             this.richTextBox_Text1.Text = "Enter text";
+            this.richTextBox_Text1.TextChanged += new System.EventHandler(this.richTextBox_Text1_TextChanged);
             // 
             // richTextBox_Name
             // 
@@ -74,16 +76,7 @@
             this.richTextBox_Name.Size = new System.Drawing.Size(118, 20);
             this.richTextBox_Name.TabIndex = 3;
             this.richTextBox_Name.Text = "Name";
-            // 
-            // button_Reload
-            // 
-            this.button_Reload.Location = new System.Drawing.Point(321, 433);
-            this.button_Reload.Name = "button_Reload";
-            this.button_Reload.Size = new System.Drawing.Size(75, 23);
-            this.button_Reload.TabIndex = 4;
-            this.button_Reload.Text = "Reload";
-            this.button_Reload.UseVisualStyleBackColor = true;
-            this.button_Reload.Click += new System.EventHandler(this.button_Reload_Click);
+            this.richTextBox_Name.TextChanged += new System.EventHandler(this.richTextBox_Name_TextChanged);
             // 
             // button_Save
             // 
@@ -169,6 +162,7 @@
             this.comboBox_ExpressionsLeft.Name = "comboBox_ExpressionsLeft";
             this.comboBox_ExpressionsLeft.Size = new System.Drawing.Size(121, 21);
             this.comboBox_ExpressionsLeft.TabIndex = 13;
+            this.comboBox_ExpressionsLeft.SelectedIndexChanged += new System.EventHandler(this.comboBox_ExpressionsLeft_SelectedIndexChanged);
             // 
             // comboBox_ExpressionsMid
             // 
@@ -178,6 +172,7 @@
             this.comboBox_ExpressionsMid.Name = "comboBox_ExpressionsMid";
             this.comboBox_ExpressionsMid.Size = new System.Drawing.Size(121, 21);
             this.comboBox_ExpressionsMid.TabIndex = 14;
+            this.comboBox_ExpressionsMid.SelectedIndexChanged += new System.EventHandler(this.comboBox_ExpressionsMid_SelectedIndexChanged);
             // 
             // comboBox_ExpressionsRight
             // 
@@ -187,6 +182,7 @@
             this.comboBox_ExpressionsRight.Name = "comboBox_ExpressionsRight";
             this.comboBox_ExpressionsRight.Size = new System.Drawing.Size(121, 21);
             this.comboBox_ExpressionsRight.TabIndex = 15;
+            this.comboBox_ExpressionsRight.SelectedIndexChanged += new System.EventHandler(this.comboBox_ExpressionsRight_SelectedIndexChanged);
             // 
             // checkBox_DarkenL
             // 
@@ -197,6 +193,7 @@
             this.checkBox_DarkenL.TabIndex = 16;
             this.checkBox_DarkenL.Text = "Darken";
             this.checkBox_DarkenL.UseVisualStyleBackColor = true;
+            this.checkBox_DarkenL.Click += new System.EventHandler(this.checkBox_DarkenL_Click);
             // 
             // checkBox_DarkenM
             // 
@@ -207,6 +204,7 @@
             this.checkBox_DarkenM.TabIndex = 18;
             this.checkBox_DarkenM.Text = "Darken";
             this.checkBox_DarkenM.UseVisualStyleBackColor = true;
+            this.checkBox_DarkenM.CheckedChanged += new System.EventHandler(this.checkBox_DarkenM_CheckedChanged);
             // 
             // checkBox_DarkenR
             // 
@@ -217,16 +215,18 @@
             this.checkBox_DarkenR.TabIndex = 20;
             this.checkBox_DarkenR.Text = "Darken";
             this.checkBox_DarkenR.UseVisualStyleBackColor = true;
+            this.checkBox_DarkenR.CheckedChanged += new System.EventHandler(this.checkBox_DarkenR_CheckedChanged);
             // 
             // checkBox_Arrow
             // 
             this.checkBox_Arrow.AutoSize = true;
-            this.checkBox_Arrow.Location = new System.Drawing.Point(343, 361);
+            this.checkBox_Arrow.Location = new System.Drawing.Point(343, 433);
             this.checkBox_Arrow.Name = "checkBox_Arrow";
             this.checkBox_Arrow.Size = new System.Drawing.Size(53, 17);
             this.checkBox_Arrow.TabIndex = 22;
             this.checkBox_Arrow.Text = "Arrow";
             this.checkBox_Arrow.UseVisualStyleBackColor = true;
+            this.checkBox_Arrow.CheckedChanged += new System.EventHandler(this.checkBox_Arrow_CheckedChanged);
             // 
             // pictureBox
             // 
@@ -241,17 +241,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // checkBox_Background
-            // 
-            this.checkBox_Background.AutoSize = true;
-            this.checkBox_Background.Location = new System.Drawing.Point(146, 361);
-            this.checkBox_Background.Name = "checkBox_Background";
-            this.checkBox_Background.Size = new System.Drawing.Size(148, 17);
-            this.checkBox_Background.TabIndex = 23;
-            this.checkBox_Background.Text = "Import Background Image";
-            this.checkBox_Background.UseVisualStyleBackColor = true;
-            this.checkBox_Background.CheckedChanged += new System.EventHandler(this.checkBox_Background_CheckedChanged);
             // 
             // label_Line1
             // 
@@ -279,16 +268,49 @@
             this.richTextBox_Text2.Size = new System.Drawing.Size(340, 20);
             this.richTextBox_Text2.TabIndex = 26;
             this.richTextBox_Text2.Text = "";
+            this.richTextBox_Text2.TextChanged += new System.EventHandler(this.richTextBox_Text2_TextChanged);
+            // 
+            // comboBox_Background
+            // 
+            this.comboBox_Background.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_Background.FormattingEnabled = true;
+            this.comboBox_Background.Location = new System.Drawing.Point(244, 357);
+            this.comboBox_Background.Name = "comboBox_Background";
+            this.comboBox_Background.Size = new System.Drawing.Size(152, 21);
+            this.comboBox_Background.TabIndex = 27;
+            this.comboBox_Background.SelectedIndexChanged += new System.EventHandler(this.comboBox_Background_SelectedIndexChanged);
+            // 
+            // label_Background
+            // 
+            this.label_Background.AutoSize = true;
+            this.label_Background.Location = new System.Drawing.Point(173, 361);
+            this.label_Background.Name = "label_Background";
+            this.label_Background.Size = new System.Drawing.Size(65, 13);
+            this.label_Background.TabIndex = 28;
+            this.label_Background.Text = "Background";
+            // 
+            // checkBox_HideText
+            // 
+            this.checkBox_HideText.AutoSize = true;
+            this.checkBox_HideText.Location = new System.Drawing.Point(244, 433);
+            this.checkBox_HideText.Name = "checkBox_HideText";
+            this.checkBox_HideText.Size = new System.Drawing.Size(93, 17);
+            this.checkBox_HideText.TabIndex = 29;
+            this.checkBox_HideText.Text = "Hide Text Box";
+            this.checkBox_HideText.UseVisualStyleBackColor = true;
+            this.checkBox_HideText.CheckedChanged += new System.EventHandler(this.checkBox_HideText_CheckedChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(414, 461);
+            this.Controls.Add(this.checkBox_HideText);
+            this.Controls.Add(this.label_Background);
+            this.Controls.Add(this.comboBox_Background);
             this.Controls.Add(this.richTextBox_Text2);
             this.Controls.Add(this.label_Line2);
             this.Controls.Add(this.label_Line1);
-            this.Controls.Add(this.checkBox_Background);
             this.Controls.Add(this.checkBox_Arrow);
             this.Controls.Add(this.checkBox_DarkenR);
             this.Controls.Add(this.checkBox_DarkenM);
@@ -304,7 +326,6 @@
             this.Controls.Add(this.comboBox_Mid);
             this.Controls.Add(this.comboBox_Left);
             this.Controls.Add(this.button_Save);
-            this.Controls.Add(this.button_Reload);
             this.Controls.Add(this.richTextBox_Name);
             this.Controls.Add(this.richTextBox_Text1);
             this.Controls.Add(this.pictureBox);
@@ -324,7 +345,6 @@
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.RichTextBox richTextBox_Text1;
         private System.Windows.Forms.RichTextBox richTextBox_Name;
-        private System.Windows.Forms.Button button_Reload;
         private System.Windows.Forms.Button button_Save;
         private System.Windows.Forms.ComboBox comboBox_Left;
         private System.Windows.Forms.ComboBox comboBox_Mid;
@@ -342,10 +362,12 @@
         private System.Windows.Forms.CheckBox checkBox_Arrow;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.CheckBox checkBox_Background;
         private System.Windows.Forms.Label label_Line1;
         private System.Windows.Forms.Label label_Line2;
         private System.Windows.Forms.RichTextBox richTextBox_Text2;
+        private System.Windows.Forms.ComboBox comboBox_Background;
+        private System.Windows.Forms.Label label_Background;
+        private System.Windows.Forms.CheckBox checkBox_HideText;
     }
 }
 

@@ -93,9 +93,99 @@ namespace FE15TextSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Altar_of_Duma {
+            get {
+                object obj = ResourceManager.GetObject("Altar_of_Duma", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Arrow {
             get {
                 object obj = ResourceManager.GetObject("Arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dolth_Keep {
+            get {
+                object obj = ResourceManager.GetObject("Dolth_Keep", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Duma {
+            get {
+                object obj = ResourceManager.GetObject("Duma", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Duma_Temple {
+            get {
+                object obj = ResourceManager.GetObject("Duma_Temple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dungeon {
+            get {
+                object obj = ResourceManager.GetObject("Dungeon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Forest_Crossroads {
+            get {
+                object obj = ResourceManager.GetObject("Forest_Crossroads", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Forest_Village {
+            get {
+                object obj = ResourceManager.GetObject("Forest_Village", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Furia_Harbor_Entrance {
+            get {
+                object obj = ResourceManager.GetObject("Furia_Harbor_Entrance", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Furia_Harbor_Square {
+            get {
+                object obj = ResourceManager.GetObject("Furia_Harbor_Square", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +203,289 @@ namespace FE15TextSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mila_Shrine {
+            get {
+                object obj = ResourceManager.GetObject("Mila_Shrine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mila_Temple_Exterior {
+            get {
+                object obj = ResourceManager.GetObject("Mila_Temple_Exterior", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mycen_s_House {
+            get {
+                object obj = ResourceManager.GetObject("Mycen_s_House", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Novis_Greatport {
+            get {
+                object obj = ResourceManager.GetObject("Novis_Greatport", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pirate_Throne_Interior {
+            get {
+                object obj = ResourceManager.GetObject("Pirate_Throne_Interior", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plains_1 {
+            get {
+                object obj = ResourceManager.GetObject("Plains_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plains_2 {
+            get {
+                object obj = ResourceManager.GetObject("Plains_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plains_3 {
+            get {
+                object obj = ResourceManager.GetObject("Plains_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Priory {
+            get {
+                object obj = ResourceManager.GetObject("Priory", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Prison_1 {
+            get {
+                object obj = ResourceManager.GetObject("Prison_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Prison_2 {
+            get {
+                object obj = ResourceManager.GetObject("Prison_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ram_Valley {
+            get {
+                object obj = ResourceManager.GetObject("Ram_Valley", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ram_Village_Entrance {
+            get {
+                object obj = ResourceManager.GetObject("Ram_Village_Entrance", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ram_Village_Flower_Patch {
+            get {
+                object obj = ResourceManager.GetObject("Ram_Village_Flower_Patch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ram_Village_Ourskirts {
+            get {
+                object obj = ResourceManager.GetObject("Ram_Village_Ourskirts", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sage_s_Hamlet {
+            get {
+                object obj = ResourceManager.GetObject("Sage_s_Hamlet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ship_1 {
+            get {
+                object obj = ResourceManager.GetObject("Ship_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ship_2 {
+            get {
+                object obj = ResourceManager.GetObject("Ship_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sluice_Gate {
+            get {
+                object obj = ResourceManager.GetObject("Sluice_Gate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sluice_Gate_Interior {
+            get {
+                object obj = ResourceManager.GetObject("Sluice_Gate_Interior", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Swamp {
+            get {
+                object obj = ResourceManager.GetObject("Swamp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TextBox {
             get {
                 object obj = ResourceManager.GetObject("TextBox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thabes_Labyrinth {
+            get {
+                object obj = ResourceManager.GetObject("Thabes_Labyrinth", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Villa {
+            get {
+                object obj = ResourceManager.GetObject("Villa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap War_Room {
+            get {
+                object obj = ResourceManager.GetObject("War_Room", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zofia_Castle_Balcony {
+            get {
+                object obj = ResourceManager.GetObject("Zofia_Castle_Balcony", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zofia_Castle_Exterior {
+            get {
+                object obj = ResourceManager.GetObject("Zofia_Castle_Exterior", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zofia_Castle_Interior {
+            get {
+                object obj = ResourceManager.GetObject("Zofia_Castle_Interior", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zofian_Coast {
+            get {
+                object obj = ResourceManager.GetObject("Zofian_Coast", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1273,6 +1643,86 @@ namespace FE15TextSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap エマ_bu_キメ_ {
+            get {
+                object obj = ResourceManager.GetObject("エマ_bu_キメ_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap エマ_bu_怒_ {
+            get {
+                object obj = ResourceManager.GetObject("エマ_bu_怒_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap エマ_bu_悲_ {
+            get {
+                object obj = ResourceManager.GetObject("エマ_bu_悲_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap エマ_bu_特殊1_ {
+            get {
+                object obj = ResourceManager.GetObject("エマ_bu_特殊1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap エマ_bu_笑_ {
+            get {
+                object obj = ResourceManager.GetObject("エマ_bu_笑_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap エマ_bu_苦_ {
+            get {
+                object obj = ResourceManager.GetObject("エマ_bu_苦_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap エマ_bu_通常_ {
+            get {
+                object obj = ResourceManager.GetObject("エマ_bu_通常_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap エマ_bu_驚_ {
+            get {
+                object obj = ResourceManager.GetObject("エマ_bu_驚_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ガーゴイル_bu_汗 {
             get {
                 object obj = ResourceManager.GetObject("ガーゴイル_bu_汗", resourceCulture);
@@ -1993,6 +2443,16 @@ namespace FE15TextSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap キングマミー_bu_通常 {
+            get {
+                object obj = ResourceManager.GetObject("キングマミー_bu_通常", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap クリフ_bu_キメ_ {
             get {
                 object obj = ResourceManager.GetObject("クリフ_bu_キメ_", resourceCulture);
@@ -2346,6 +2806,76 @@ namespace FE15TextSimulator.Properties {
         internal static System.Drawing.Bitmap クレーベ_bu_驚_ {
             get {
                 object obj = ResourceManager.GetObject("クレーベ_bu_驚_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap クレーベ2_bu_キメ_ {
+            get {
+                object obj = ResourceManager.GetObject("クレーベ2_bu_キメ_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap クレーベ2_bu_怒_ {
+            get {
+                object obj = ResourceManager.GetObject("クレーベ2_bu_怒_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap クレーベ2_bu_悲_ {
+            get {
+                object obj = ResourceManager.GetObject("クレーベ2_bu_悲_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap クレーベ2_bu_笑_ {
+            get {
+                object obj = ResourceManager.GetObject("クレーベ2_bu_笑_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap クレーベ2_bu_苦_ {
+            get {
+                object obj = ResourceManager.GetObject("クレーベ2_bu_苦_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap クレーベ2_bu_通常_ {
+            get {
+                object obj = ResourceManager.GetObject("クレーベ2_bu_通常_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap クレーベ2_bu_驚_ {
+            get {
+                object obj = ResourceManager.GetObject("クレーベ2_bu_驚_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2983,6 +3513,96 @@ namespace FE15TextSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap シェイド_bu_キメ_ {
+            get {
+                object obj = ResourceManager.GetObject("シェイド_bu_キメ_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap シェイド_bu_幽霊_ {
+            get {
+                object obj = ResourceManager.GetObject("シェイド_bu_幽霊_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap シェイド_bu_怒_ {
+            get {
+                object obj = ResourceManager.GetObject("シェイド_bu_怒_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap シェイド_bu_悲_ {
+            get {
+                object obj = ResourceManager.GetObject("シェイド_bu_悲_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap シェイド_bu_特殊1_ {
+            get {
+                object obj = ResourceManager.GetObject("シェイド_bu_特殊1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap シェイド_bu_笑_ {
+            get {
+                object obj = ResourceManager.GetObject("シェイド_bu_笑_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap シェイド_bu_苦_ {
+            get {
+                object obj = ResourceManager.GetObject("シェイド_bu_苦_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap シェイド_bu_通常_ {
+            get {
+                object obj = ResourceManager.GetObject("シェイド_bu_通常_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap シェイド_bu_驚_ {
+            get {
+                object obj = ResourceManager.GetObject("シェイド_bu_驚_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ジェシー_bu_キメ_ {
             get {
                 object obj = ResourceManager.GetObject("ジェシー_bu_キメ_", resourceCulture);
@@ -3263,16 +3883,6 @@ namespace FE15TextSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap シスター_bu_キメ1 {
-            get {
-                object obj = ResourceManager.GetObject("シスター_bu_キメ1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap シスター_bu_幽霊 {
             get {
                 object obj = ResourceManager.GetObject("シスター_bu_幽霊", resourceCulture);
@@ -3293,29 +3903,9 @@ namespace FE15TextSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap シスター_bu_怒1 {
-            get {
-                object obj = ResourceManager.GetObject("シスター_bu_怒1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap シスター_bu_悲 {
             get {
                 object obj = ResourceManager.GetObject("シスター_bu_悲", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap シスター_bu_悲1 {
-            get {
-                object obj = ResourceManager.GetObject("シスター_bu_悲1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3333,29 +3923,9 @@ namespace FE15TextSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap シスター_bu_汗1 {
-            get {
-                object obj = ResourceManager.GetObject("シスター_bu_汗1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap シスター_bu_照 {
             get {
                 object obj = ResourceManager.GetObject("シスター_bu_照", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap シスター_bu_照1 {
-            get {
-                object obj = ResourceManager.GetObject("シスター_bu_照1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3373,29 +3943,9 @@ namespace FE15TextSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap シスター_bu_笑1 {
-            get {
-                object obj = ResourceManager.GetObject("シスター_bu_笑1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap シスター_bu_苦 {
             get {
                 object obj = ResourceManager.GetObject("シスター_bu_苦", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap シスター_bu_苦1 {
-            get {
-                object obj = ResourceManager.GetObject("シスター_bu_苦1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3413,29 +3963,9 @@ namespace FE15TextSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap シスター_bu_通常1 {
-            get {
-                object obj = ResourceManager.GetObject("シスター_bu_通常1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap シスター_bu_驚 {
             get {
                 object obj = ResourceManager.GetObject("シスター_bu_驚", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap シスター_bu_驚1 {
-            get {
-                object obj = ResourceManager.GetObject("シスター_bu_驚1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8313,6 +8843,76 @@ namespace FE15TextSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap マチルダ2_bu_キメ_ {
+            get {
+                object obj = ResourceManager.GetObject("マチルダ2_bu_キメ_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap マチルダ2_bu_怒_ {
+            get {
+                object obj = ResourceManager.GetObject("マチルダ2_bu_怒_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap マチルダ2_bu_悲_ {
+            get {
+                object obj = ResourceManager.GetObject("マチルダ2_bu_悲_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap マチルダ2_bu_笑_ {
+            get {
+                object obj = ResourceManager.GetObject("マチルダ2_bu_笑_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap マチルダ2_bu_苦_ {
+            get {
+                object obj = ResourceManager.GetObject("マチルダ2_bu_苦_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap マチルダ2_bu_通常_ {
+            get {
+                object obj = ResourceManager.GetObject("マチルダ2_bu_通常_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap マチルダ2_bu_驚_ {
+            get {
+                object obj = ResourceManager.GetObject("マチルダ2_bu_驚_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap マッセナ_bu_キメ {
             get {
                 object obj = ResourceManager.GetObject("マッセナ_bu_キメ", resourceCulture);
@@ -8816,6 +9416,156 @@ namespace FE15TextSimulator.Properties {
         internal static System.Drawing.Bitmap メイ_bu_驚_ {
             get {
                 object obj = ResourceManager.GetObject("メイ_bu_驚_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ユズ_bu_キメ_ {
+            get {
+                object obj = ResourceManager.GetObject("ユズ_bu_キメ_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ユズ_bu_怒_ {
+            get {
+                object obj = ResourceManager.GetObject("ユズ_bu_怒_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ユズ_bu_悲_ {
+            get {
+                object obj = ResourceManager.GetObject("ユズ_bu_悲_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ユズ_bu_笑_ {
+            get {
+                object obj = ResourceManager.GetObject("ユズ_bu_笑_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ユズ_bu_苦_ {
+            get {
+                object obj = ResourceManager.GetObject("ユズ_bu_苦_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ユズ_bu_通常_ {
+            get {
+                object obj = ResourceManager.GetObject("ユズ_bu_通常_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ランド_bu_キメ_ {
+            get {
+                object obj = ResourceManager.GetObject("ランド_bu_キメ_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ランド_bu_怒_ {
+            get {
+                object obj = ResourceManager.GetObject("ランド_bu_怒_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ランド_bu_悲_ {
+            get {
+                object obj = ResourceManager.GetObject("ランド_bu_悲_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ランド_bu_特殊1_ {
+            get {
+                object obj = ResourceManager.GetObject("ランド_bu_特殊1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ランド_bu_笑_ {
+            get {
+                object obj = ResourceManager.GetObject("ランド_bu_笑_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ランド_bu_苦_ {
+            get {
+                object obj = ResourceManager.GetObject("ランド_bu_苦_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ランド_bu_通常_ {
+            get {
+                object obj = ResourceManager.GetObject("ランド_bu_通常_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ランド_bu_驚_ {
+            get {
+                object obj = ResourceManager.GetObject("ランド_bu_驚_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap リゲル人捕虜_bu_通常 {
+            get {
+                object obj = ResourceManager.GetObject("リゲル人捕虜_bu_通常", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

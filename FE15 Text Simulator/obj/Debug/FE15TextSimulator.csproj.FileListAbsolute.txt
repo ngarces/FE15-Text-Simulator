@@ -1,0 +1,14 @@
+C:\Users\Home\Documents\Visual Studio 2013\Projects\FE15-Text-Simulator\FE15 Text Simulator\bin\Debug\FE15 Text Simulator.exe.config
+C:\Users\Home\Documents\Visual Studio 2013\Projects\FE15-Text-Simulator\FE15 Text Simulator\bin\Debug\FE15 Text Simulator.exe.manifest
+C:\Users\Home\Documents\Visual Studio 2013\Projects\FE15-Text-Simulator\FE15 Text Simulator\bin\Debug\FE15 Text Simulator.application
+C:\Users\Home\Documents\Visual Studio 2013\Projects\FE15-Text-Simulator\FE15 Text Simulator\bin\Debug\FE15 Text Simulator.exe
+C:\Users\Home\Documents\Visual Studio 2013\Projects\FE15-Text-Simulator\FE15 Text Simulator\bin\Debug\FE15 Text Simulator.pdb
+C:\Users\Home\Documents\Visual Studio 2013\Projects\FE15-Text-Simulator\FE15 Text Simulator\obj\Debug\FE15TextSimulator.csprojResolveAssemblyReference.cache
+C:\Users\Home\Documents\Visual Studio 2013\Projects\FE15-Text-Simulator\FE15 Text Simulator\obj\Debug\FE15TextSimulator.Form1.resources
+C:\Users\Home\Documents\Visual Studio 2013\Projects\FE15-Text-Simulator\FE15 Text Simulator\obj\Debug\FE15TextSimulator.Properties.Resources.resources
+C:\Users\Home\Documents\Visual Studio 2013\Projects\FE15-Text-Simulator\FE15 Text Simulator\obj\Debug\FE15TextSimulator.csproj.GenerateResource.Cache
+C:\Users\Home\Documents\Visual Studio 2013\Projects\FE15-Text-Simulator\FE15 Text Simulator\obj\Debug\FE15 Text Simulator.TrustInfo.xml
+C:\Users\Home\Documents\Visual Studio 2013\Projects\FE15-Text-Simulator\FE15 Text Simulator\obj\Debug\FE15 Text Simulator.exe.manifest
+C:\Users\Home\Documents\Visual Studio 2013\Projects\FE15-Text-Simulator\FE15 Text Simulator\obj\Debug\FE15 Text Simulator.application
+C:\Users\Home\Documents\Visual Studio 2013\Projects\FE15-Text-Simulator\FE15 Text Simulator\obj\Debug\FE15 Text Simulator.exe
+C:\Users\Home\Documents\Visual Studio 2013\Projects\FE15-Text-Simulator\FE15 Text Simulator\obj\Debug\FE15 Text Simulator.pdb

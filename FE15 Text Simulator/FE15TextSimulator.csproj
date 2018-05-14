@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FE15TextSimulator</RootNamespace>
-    <AssemblyName>FE 15 Text Simulator</AssemblyName>
+    <AssemblyName>FE15 Text Simulator</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -25,6 +25,7 @@
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -36,7 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>1</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -61,6 +62,15 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8E98DD6A332ABE973DCEB87D17B6C87E2C6E68ED</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FE15TextSimulator_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -96,6 +106,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="FE15TextSimulator_TemporaryKey.pfx" />
+    <None Include="FOT-ChiaroStd-B.otf" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -111,6 +123,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\FOT-ChiaroStd-B.otf" />
     <None Include="Resources\_カゲマン_adv_通常.png" />
   </ItemGroup>
   <ItemGroup>
@@ -5226,6 +5239,258 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\エマ_bu_キメ_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\エマ_bu_怒_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\エマ_bu_悲_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\エマ_bu_特殊1_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\エマ_bu_笑_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\エマ_bu_苦_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\エマ_bu_通常_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\エマ_bu_驚_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\ランド_bu_特殊1_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\シェイド_bu_幽霊_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\シェイド_bu_特殊1_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\シェイド_bu_キメ_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\シェイド_bu_怒_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\シェイド_bu_悲_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\シェイド_bu_笑_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\シェイド_bu_苦_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\シェイド_bu_驚_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\シェイド_bu_通常_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\ランド_bu_笑_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\ランド_bu_苦_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\ランド_bu_悲_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\ランド_bu_キメ_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\ランド_bu_怒_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\ランド_bu_驚_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\ランド_bu_通常_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\ユズ_bu_キメ_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\ユズ_bu_怒_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\ユズ_bu_悲_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\ユズ_bu_笑_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\ユズ_bu_苦_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\ユズ_bu_通常_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc\リゲル人捕虜_bu_通常.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monster\キングマミー_bu_通常.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Altar of Duma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Dolth Keep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Duma Temple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Duma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Dungeon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Forest Crossroads.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Forest Village.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Furia Harbor Entrance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Furia Harbor Square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Mila Shrine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Mila Temple Exterior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Mycen%27s House.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Novis Greatport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Pirate Throne Interior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Plains 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Plains 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Plains 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Priory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Prison 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Prison 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Ram Valley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Ram Village Entrance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Ram Village Flower Patch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Ram Village Ourskirts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Sage%27s Hamlet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Ship 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Ship 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Sluice Gate Interior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Sluice Gate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Swamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Thabes Labyrinth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Villa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\War Room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Zofia Castle Balcony.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Zofia Castle Exterior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Zofia Castle Interior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds\Zofian Coast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\マチルダ2_bu_キメ_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\マチルダ2_bu_怒_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\マチルダ2_bu_悲_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\マチルダ2_bu_笑_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\マチルダ2_bu_苦_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\マチルダ2_bu_通常_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\マチルダ2_bu_驚_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\クレーベ2_bu_キメ_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\クレーベ2_bu_怒_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\クレーベ2_bu_苦_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\クレーベ2_bu_笑_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\クレーベ2_bu_驚_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\クレーベ2_bu_通常_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player\クレーベ2_bu_悲_.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

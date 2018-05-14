@@ -118,14 +118,125 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Altar_of_Duma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Altar of Duma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dolth_Keep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Dolth Keep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Duma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Duma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Duma_Temple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Duma Temple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dungeon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Dungeon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forest_Crossroads" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Forest Crossroads.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forest_Village" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Forest Village.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Furia_Harbor_Entrance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Furia Harbor Entrance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Furia_Harbor_Square" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Furia Harbor Square.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Mila_Shrine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Mila Shrine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mila_Temple_Exterior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Mila Temple Exterior.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mycen_s_House" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Mycen's House.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Novis_Greatport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Novis Greatport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pirate_Throne_Interior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Pirate Throne Interior.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plains_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Plains 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plains_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Plains 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plains_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Plains 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Priory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Priory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prison_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Prison 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prison_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Prison 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ram_Valley" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Ram Valley.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ram_Village_Entrance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Ram Village Entrance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ram_Village_Flower_Patch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Ram Village Flower Patch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ram_Village_Ourskirts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Ram Village Ourskirts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sage_s_Hamlet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Sage's Hamlet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ship_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Ship 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ship_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Ship 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sluice_Gate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Sluice Gate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sluice_Gate_Interior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Sluice Gate Interior.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Swamp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Swamp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TextBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TextBox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thabes_Labyrinth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Thabes Labyrinth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Villa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Villa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="War_Room" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\War Room.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zofian_Coast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Zofian Coast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zofia_Castle_Balcony" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Zofia Castle Balcony.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zofia_Castle_Exterior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Zofia Castle Exterior.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zofia_Castle_Interior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgrounds\Zofia Castle Interior.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_カゲマン_bu_汗" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\_カゲマン_bu_汗.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -490,6 +601,30 @@
   <data name="エフィ_bu_驚_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\player\エフィ_bu_驚_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="エマ_bu_キメ_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\エマ_bu_キメ_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="エマ_bu_怒_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\エマ_bu_怒_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="エマ_bu_悲_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\エマ_bu_悲_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="エマ_bu_特殊1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\エマ_bu_特殊1_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="エマ_bu_笑_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\エマ_bu_笑_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="エマ_bu_苦_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\エマ_bu_苦_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="エマ_bu_通常_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\エマ_bu_通常_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="エマ_bu_驚_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\エマ_bu_驚_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="カチュア_bu_キメ_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\player\カチュア_bu_キメ_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -669,6 +804,9 @@
   </data>
   <data name="ガーゴイル_bu_通常" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\monster\ガーゴイル_bu_通常.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="キングマミー_bu_通常" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monster\キングマミー_bu_通常.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ギムレー幼体_bu_汗" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\monster\ギムレー幼体_bu_汗.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -973,61 +1111,61 @@
   <data name="ザクソン_bu_通常" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\enemy\ザクソン_bu_通常.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="シスター_bu_キメ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\npc\シスター_bu_キメ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="シェイド_bu_キメ_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\シェイド_bu_キメ_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="シスター_bu_キメ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="シェイド_bu_幽霊_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\シェイド_bu_幽霊_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="シェイド_bu_怒_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\シェイド_bu_怒_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="シェイド_bu_悲_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\シェイド_bu_悲_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="シェイド_bu_特殊1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\シェイド_bu_特殊1_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="シェイド_bu_笑_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\シェイド_bu_笑_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="シェイド_bu_苦_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\シェイド_bu_苦_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="シェイド_bu_通常_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\シェイド_bu_通常_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="シェイド_bu_驚_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\シェイド_bu_驚_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="シスター_bu_キメ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\job\シスター_bu_キメ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="シスター_bu_幽霊" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\job\シスター_bu_幽霊.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="シスター_bu_怒" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\npc\シスター_bu_怒.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="シスター_bu_怒1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\job\シスター_bu_怒.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="シスター_bu_悲" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\npc\シスター_bu_悲.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="シスター_bu_悲1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\job\シスター_bu_悲.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="シスター_bu_汗" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\npc\シスター_bu_汗.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="シスター_bu_汗1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\job\シスター_bu_汗.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="シスター_bu_照" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\npc\シスター_bu_照.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="シスター_bu_照1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\job\シスター_bu_照.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="シスター_bu_笑" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\npc\シスター_bu_笑.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="シスター_bu_笑1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\job\シスター_bu_笑.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="シスター_bu_苦" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\npc\シスター_bu_苦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="シスター_bu_苦1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\job\シスター_bu_苦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="シスター_bu_通常" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\npc\シスター_bu_通常.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="シスター_bu_通常1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\job\シスター_bu_通常.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="シスター_bu_驚" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\npc\シスター_bu_驚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="シスター_bu_驚1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\job\シスター_bu_驚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="シスター青_bu_キメ" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -2746,6 +2884,51 @@
   <data name="メイ_bu_驚_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\player\メイ_bu_驚_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ユズ_bu_キメ_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\ユズ_bu_キメ_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ユズ_bu_怒_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\ユズ_bu_怒_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ユズ_bu_悲_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\ユズ_bu_悲_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ユズ_bu_笑_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\ユズ_bu_笑_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ユズ_bu_苦_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\ユズ_bu_苦_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ユズ_bu_通常_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\ユズ_bu_通常_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ランド_bu_キメ_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\ランド_bu_キメ_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ランド_bu_怒_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\ランド_bu_怒_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ランド_bu_悲_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\ランド_bu_悲_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ランド_bu_特殊1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\ランド_bu_特殊1_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ランド_bu_笑_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\ランド_bu_笑_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ランド_bu_苦_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\ランド_bu_苦_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ランド_bu_通常_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\ランド_bu_通常_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ランド_bu_驚_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\ランド_bu_驚_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="リゲル人捕虜_bu_通常" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\npc\リゲル人捕虜_bu_通常.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="リッチー_bu_汗" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\monster\リッチー_bu_汗.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -4188,5 +4371,47 @@
   </data>
   <data name="魔女リネア_bu_通常" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\enemy\魔女リネア_bu_通常.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="クレーベ2_bu_キメ_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\クレーベ2_bu_キメ_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="クレーベ2_bu_怒_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\クレーベ2_bu_怒_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="クレーベ2_bu_笑_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\クレーベ2_bu_笑_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="クレーベ2_bu_苦_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\クレーベ2_bu_苦_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="クレーベ2_bu_通常_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\クレーベ2_bu_通常_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="クレーベ2_bu_驚_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\クレーベ2_bu_驚_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="マチルダ2_bu_キメ_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\マチルダ2_bu_キメ_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="マチルダ2_bu_怒_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\マチルダ2_bu_怒_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="マチルダ2_bu_悲_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\マチルダ2_bu_悲_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="マチルダ2_bu_笑_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\マチルダ2_bu_笑_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="マチルダ2_bu_苦_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\マチルダ2_bu_苦_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="マチルダ2_bu_通常_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\マチルダ2_bu_通常_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="マチルダ2_bu_驚_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\マチルダ2_bu_驚_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="クレーベ2_bu_悲_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player\クレーベ2_bu_悲_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

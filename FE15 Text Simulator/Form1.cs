@@ -19,24 +19,31 @@ namespace FE15TextSimulator
         public static Bitmap importedL;
         public static Bitmap importedM;
         public static Bitmap importedR;
+
         
         public Form1()
         {
             InitializeComponent();
+
             pictureBox.Image = new Bitmap(pictureBox.Width, pictureBox.Height);
             comboBox_Left.Items.Add("");
-            comboBox_Left.Items.Add("Import Image...");
+            comboBox_Left.Items.Add("Custom Image");
             comboBox_Mid.Items.Add("");
-            comboBox_Mid.Items.Add("Import Image...");
+            comboBox_Mid.Items.Add("Custom Image");
             comboBox_Right.Items.Add("");
-            comboBox_Right.Items.Add("Import Image...");
+            comboBox_Right.Items.Add("Custom Image");
             foreach (KeyValuePair<string, string> entry in Names)
             {
                 comboBox_Left.Items.Add(entry.Key);
                 comboBox_Mid.Items.Add(entry.Key);
                 comboBox_Right.Items.Add(entry.Key);
             }
-            button_Reload_Click(null, EventArgs.Empty);
+            comboBox_Background.Items.Add("");
+            comboBox_Background.Items.Add("Custom Image");
+            foreach (string entry in backgrounds)
+                comboBox_Background.Items.Add(entry);
+
+            refresh_Picturebox();
         }
 
         //Holds English names and their corresponding Japanese name used on their portrait file
@@ -84,7 +91,7 @@ namespace FE15TextSimulator
             {"Tatiana", "ティータ"},
             {"Zeke", "ジーク"},
             {"Conrad", "コンラート"},
-            {"Conrad (Masked Knight)", "仮面の騎士"},
+            {"Conrad (Masked)", "仮面の騎士"},
             {"Mycen", "マイセン"},
 
             //Amiibo
@@ -221,6 +228,16 @@ namespace FE15TextSimulator
 
             //Other
             {"Shadow Man", "_カゲマン"},
+
+            //DLC
+            {"Emma", "エマ"},
+            {"Randal", "ランド"},
+            {"Shade", "シェイド"},
+            {"Yuzu", "ユズ"},
+            {"Clive (DLC)", "クレーベ2"},
+            {"Mathilda (DLC)", "マチルダ2"},
+            {"Hostages", "リゲル人捕虜"},
+            {"Tomb Lord", "キングマミー"},
         };
 
         List<string> playable = new List<string>
@@ -237,7 +254,7 @@ namespace FE15TextSimulator
             "Clair",
             "Clive",
             "Conrad",
-            "Conrad (Masked Knight)",
+            "Conrad (Masked)",
             "Corrin (Female)",
             "Corrin (Male)",
             "Deen",
@@ -274,106 +291,69 @@ namespace FE15TextSimulator
             "Tobin",
             "Tobin (Child)",
             "Valbar",
-            "Zeke"
+            "Zeke",
+
+            "Emma",
+            "Randal",
+            "Shade",
+            "Yuzu",
+            "Clive (DLC)",
+            "Mathilda (DLC)"
         };
 
         Dictionary<string, string> Expressions = new Dictionary<string, string>()
         {
             {"Normal", "通常"},
-            {"Great", "キメ"},
+            {"Cool", "キメ"},
             {"Anger", "怒"},
             {"Sadness", "悲"},
-            {"Laughing", "笑"},
-            {"Suffering", "苦"},
+            {"Smile", "笑"},
+            {"Pain", "苦"},
             {"Surprised", "驚"},
             {"Special", "特殊1"},
             {"Posessed", "幽霊"},
         };
 
-        private void button_Reload_Click(object sender, EventArgs e)
+        List<string> backgrounds = new List<string>
         {
-            Bitmap bmp = new Bitmap(pictureBox.Image);
-            Graphics g = Graphics.FromImage(bmp);
-
-            g.Clear(Color.Transparent);
-
-            if (checkBox_Background.Checked && backgroundImage != null)
-                g.DrawImage(backgroundImage, 0, 0);
-
-            if(!string.IsNullOrEmpty(comboBox_Left.Text))
-            {
-                Bitmap portrait;
-
-                if (comboBox_Left.Text != "Import Image...")
-                {
-                    string name = Names[comboBox_Left.Text] + "_bu_" + Expressions[comboBox_ExpressionsLeft.Text];
-                    if (playable.Contains(comboBox_Left.Text))
-                        name += "_";    //Playable characters have an extra underscore at the end of their file names
-                    portrait = (Bitmap)FE15TextSimulator.Properties.Resources.ResourceManager.GetObject(name);
-                }
-                else
-                    portrait = (Bitmap)importedL.Clone();
-
-                if (checkBox_DarkenL.Checked)
-                    portrait = SetBrightness(portrait, -70);
-                g.DrawImage(portrait, -29, 0);
-            }
-
-            if (!string.IsNullOrEmpty(comboBox_Mid.Text))
-            {
-                Bitmap portrait;
-
-                if (comboBox_Mid.Text != "Import Image...")
-                {
-                    string name = Names[comboBox_Mid.Text] + "_bu_" + Expressions[comboBox_ExpressionsMid.Text];
-                    if (playable.Contains(comboBox_Mid.Text))
-                        name += "_";    //Playable characters have an extra underscore at the end of their file names
-                    portrait = (Bitmap)FE15TextSimulator.Properties.Resources.ResourceManager.GetObject(name);
-                }
-                else
-                    portrait = (Bitmap)importedM.Clone();
-
-                if (checkBox_DarkenM.Checked)
-                    portrait = SetBrightness(portrait, -70);
-                g.DrawImage(portrait, 72, 0);
-            }
-
-            if (!string.IsNullOrEmpty(comboBox_Right.Text))
-            {
-                Bitmap portrait;
-
-                if (comboBox_Right.Text != "Import Image...")
-                {
-                    string name = Names[comboBox_Right.Text] + "_bu_" + Expressions[comboBox_ExpressionsRight.Text];
-                    if (playable.Contains(comboBox_Right.Text))
-                        name += "_";    //Playable characters have an extra underscore at the end of their file names
-                    portrait = (Bitmap)FE15TextSimulator.Properties.Resources.ResourceManager.GetObject(name);
-                }
-                else
-                    portrait = (Bitmap)importedR.Clone();
-
-                if (checkBox_DarkenR.Checked)
-                    portrait = SetBrightness(portrait, -70);
-                g.DrawImage(portrait, 172, 0);
-            }
-
-            g.DrawImage(FE15TextSimulator.Properties.Resources.TextBox, 0, 151);
-
-            var font = new Font("FOT-Chiaro Std B", 15, FontStyle.Bold, GraphicsUnit.Pixel);
-            g.TextRenderingHint = TextRenderingHint.AntiAlias;
-            g.DrawString(richTextBox_Text1.Text, font, Brushes.Bisque, new Point(28, 188));
-            g.DrawString(richTextBox_Text2.Text, font, Brushes.Bisque, new Point(28, 208));
-
-            StringFormat stringFormat = new StringFormat();
-            stringFormat.Alignment = StringAlignment.Center;
-            stringFormat.LineAlignment = StringAlignment.Center;
-            g.DrawString(richTextBox_Name.Text, font, Brushes.Bisque, new Rectangle(8, 162, 123, 18), stringFormat);
-
-            if (checkBox_Arrow.Checked)
-                g.DrawImage(FE15TextSimulator.Properties.Resources.Arrow, 367, 207);
-
-            pictureBox.Image = bmp;
-        }
+            "Altar of Duma",
+            "Dolth Keep",
+            "Duma Temple",
+            "Duma",
+            "Dungeon",
+            "Forest Crossroads",
+            "Forest Village",
+            "Furia Harbor Entrance",
+            "Furia Harbor Square",
+            "Mila Shrine",
+            "Mila Temple Exterior",
+            "Mycen's House",
+            "Novis Greatport",
+            "Pirate Throne Interior",
+            "Plains 1",
+            "Plains 2",
+            "Plains 3",
+            "Priory",
+            "Prison 1",
+            "Prison 2",
+            "Ram Valley",
+            "Ram Village Entrance",
+            "Ram Village Flower Patch",
+            "Ram Village Ourskirts",
+            "Sage's Hamlet",
+            "Ship 1",
+            "Ship 2",
+            "Sluice Gate Interior",
+            "Sluice Gate",
+            "Swamp",
+            "Thabes Labyrinth",
+            "Villa",
+            "War Room",
+            "Zofia Castle Balcony",
+            "Zofia Castle Exterior",
+            "Zofia Castle Interior",
+            "Zofian Coast",
+        };
 
         private void button_Save_Click(object sender, EventArgs e)
         {
@@ -388,8 +368,11 @@ namespace FE15TextSimulator
         {
             comboBox_ExpressionsLeft.Items.Clear();
             if (string.IsNullOrEmpty(comboBox_Left.Text))
+            {
+                refresh_Picturebox();
                 return;
-            if (comboBox_Left.Text == "Import Image...")
+            }
+            if (comboBox_Left.Text == "Custom Image")
             {
                 OpenFileDialog ofd = new OpenFileDialog();
                 ofd.Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
@@ -399,7 +382,10 @@ namespace FE15TextSimulator
                     importedL = new Bitmap(ofd.FileName);
                 }
                 else
+                {
                     comboBox_Left.SelectedIndex = 0;
+                }
+                refresh_Picturebox();
                 return;
             }
 
@@ -412,14 +398,18 @@ namespace FE15TextSimulator
                     comboBox_ExpressionsLeft.Items.Add(entry.Key);
             }
             comboBox_ExpressionsLeft.SelectedIndex = 0;
+            refresh_Picturebox();
         }
 
         private void comboBox_Mid_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBox_ExpressionsMid.Items.Clear();
             if (string.IsNullOrEmpty(comboBox_Mid.Text))
+            {
+                refresh_Picturebox();
                 return;
-            if (comboBox_Mid.Text == "Import Image...")
+            }
+            if (comboBox_Mid.Text == "Custom Image")
             {
                 OpenFileDialog ofd = new OpenFileDialog();
                 ofd.Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
@@ -429,7 +419,10 @@ namespace FE15TextSimulator
                     importedM = new Bitmap(ofd.FileName);
                 }
                 else
+                {
                     comboBox_Mid.SelectedIndex = 0;
+                }
+                refresh_Picturebox();
                 return;
             }
             foreach (KeyValuePair<string, string> entry in Expressions)
@@ -447,8 +440,11 @@ namespace FE15TextSimulator
         {
             comboBox_ExpressionsRight.Items.Clear();
             if (string.IsNullOrEmpty(comboBox_Right.Text))
+            {
+                refresh_Picturebox();
                 return;
-            if (comboBox_Right.Text == "Import Image...")
+            }
+            if (comboBox_Right.Text == "Custom Image")
             {
                 OpenFileDialog ofd = new OpenFileDialog();
                 ofd.Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
@@ -458,7 +454,10 @@ namespace FE15TextSimulator
                     importedR = new Bitmap(ofd.FileName);
                 }
                 else
+                {
                     comboBox_Right.SelectedIndex = 0;
+                }
+                refresh_Picturebox();
                 return;
             }
             foreach (KeyValuePair<string, string> entry in Expressions)
@@ -470,22 +469,6 @@ namespace FE15TextSimulator
                     comboBox_ExpressionsRight.Items.Add(entry.Key);
             }
             comboBox_ExpressionsRight.SelectedIndex = 0;
-        }
-
-        private void checkBox_Background_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox_Background.Checked)
-            {
-                OpenFileDialog ofd = new OpenFileDialog();
-                ofd.Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
-
-                if (ofd.ShowDialog() == DialogResult.OK)
-                {
-                    backgroundImage = new Bitmap(ofd.FileName);
-                }
-                else
-                    checkBox_Background.Checked = false;
-            }
         }
 
         public Bitmap SetBrightness(Bitmap bmp, int brightness)
@@ -516,6 +499,176 @@ namespace FE15TextSimulator
             g.DrawImage(tempBmp, new Rectangle(0, 0, tempBmp.Width, tempBmp.Height), 0, 0, tempBmp.Width, tempBmp.Height, GraphicsUnit.Pixel, attributes);
 
             return newBmp;
+        }
+
+        private void refresh_Picturebox()
+        {
+            Bitmap bmp = new Bitmap(pictureBox.Image);
+            Graphics g = Graphics.FromImage(bmp);
+
+            g.Clear(Color.Transparent);
+
+            if (backgroundImage != null)
+                g.DrawImage(backgroundImage, 0, 0);
+
+            if (!string.IsNullOrEmpty(comboBox_Left.Text))
+            {
+                Bitmap portrait;
+
+                if (comboBox_Left.Text != "Custom Image")
+                {
+                    string name = Names[comboBox_Left.Text] + "_bu_" + Expressions[comboBox_ExpressionsLeft.Text];
+                    if (playable.Contains(comboBox_Left.Text))
+                        name += "_";    //Playable characters have an extra underscore at the end of their file names
+                    portrait = (Bitmap)FE15TextSimulator.Properties.Resources.ResourceManager.GetObject(name);
+                }
+                else
+                    portrait = (Bitmap)importedL.Clone();
+
+                if (checkBox_DarkenL.Checked)
+                    portrait = SetBrightness(portrait, -70);
+                g.DrawImage(portrait, -29, 0);
+            }
+
+            if (!string.IsNullOrEmpty(comboBox_Mid.Text))
+            {
+                Bitmap portrait;
+
+                if (comboBox_Mid.Text != "Custom Image")
+                {
+                    string name = Names[comboBox_Mid.Text] + "_bu_" + Expressions[comboBox_ExpressionsMid.Text];
+                    if (playable.Contains(comboBox_Mid.Text))
+                        name += "_";    //Playable characters have an extra underscore at the end of their file names
+                    portrait = (Bitmap)FE15TextSimulator.Properties.Resources.ResourceManager.GetObject(name);
+                }
+                else
+                    portrait = (Bitmap)importedM.Clone();
+
+                if (checkBox_DarkenM.Checked)
+                    portrait = SetBrightness(portrait, -70);
+                g.DrawImage(portrait, 72, 0);
+            }
+
+            if (!string.IsNullOrEmpty(comboBox_Right.Text))
+            {
+                Bitmap portrait;
+
+                if (comboBox_Right.Text != "Custom Image")
+                {
+                    string name = Names[comboBox_Right.Text] + "_bu_" + Expressions[comboBox_ExpressionsRight.Text];
+                    if (playable.Contains(comboBox_Right.Text))
+                        name += "_";    //Playable characters have an extra underscore at the end of their file names
+                    portrait = (Bitmap)FE15TextSimulator.Properties.Resources.ResourceManager.GetObject(name);
+                }
+                else
+                    portrait = (Bitmap)importedR.Clone();
+
+                if (checkBox_DarkenR.Checked)
+                    portrait = SetBrightness(portrait, -70);
+                g.DrawImage(portrait, 172, 0);
+            }
+
+            if (!checkBox_HideText.Checked)
+            {
+                g.DrawImage(FE15TextSimulator.Properties.Resources.TextBox, 0, 151);
+
+                var font = new Font("FOT-Chiaro Std B", 15, FontStyle.Bold, GraphicsUnit.Pixel);
+                g.TextRenderingHint = TextRenderingHint.AntiAlias;
+                g.DrawString(richTextBox_Text1.Text, font, Brushes.Bisque, new Point(28, 188));
+                g.DrawString(richTextBox_Text2.Text, font, Brushes.Bisque, new Point(28, 208));
+
+                StringFormat stringFormat = new StringFormat();
+                stringFormat.Alignment = StringAlignment.Center;
+                stringFormat.LineAlignment = StringAlignment.Center;
+                g.DrawString(richTextBox_Name.Text, font, Brushes.Bisque, new Rectangle(8, 162, 123, 18), stringFormat);
+
+                if (checkBox_Arrow.Checked)
+                    g.DrawImage(FE15TextSimulator.Properties.Resources.Arrow, 367, 207);
+            }
+            pictureBox.Image = bmp;
+        }
+
+        private void richTextBox_Name_TextChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void richTextBox_Text1_TextChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void richTextBox_Text2_TextChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void comboBox_ExpressionsLeft_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void comboBox_ExpressionsMid_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void comboBox_ExpressionsRight_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void checkBox_DarkenL_Click(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void checkBox_DarkenM_CheckedChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void checkBox_DarkenR_CheckedChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void checkBox_Arrow_CheckedChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void comboBox_Background_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(comboBox_Background.Text))
+            {
+                if (comboBox_Background.Text == "Custom Image")
+                {
+                    OpenFileDialog ofd = new OpenFileDialog();
+                    ofd.Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
+
+                    if (ofd.ShowDialog() == DialogResult.OK)
+                        backgroundImage = new Bitmap(ofd.FileName);
+                    else
+                    {
+                        comboBox_Right.SelectedIndex = -1;
+                        backgroundImage = null;
+                    }
+                }
+                else
+                {
+                    string resourceName = comboBox_Background.Text;
+                    resourceName = resourceName.Replace(" ", "_");
+                    resourceName = resourceName.Replace("'", "_");
+                    backgroundImage = (Bitmap)FE15TextSimulator.Properties.Resources.ResourceManager.GetObject(resourceName);
+                }
+            }
+            refresh_Picturebox();
+        }
+
+        private void checkBox_HideText_CheckedChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
         }
     }
 }
