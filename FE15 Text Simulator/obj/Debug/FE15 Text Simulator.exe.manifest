@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FE15 Text Simulator.exe" size="51491840">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FE15 Text Simulator.exe" size="51492352">
       <assemblyIdentity name="FE15 Text Simulator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Nb5Rs/L2sD3DejIuZkvYV4vxln/3J+Uxymo2uGx2y3o=</dsig:DigestValue>
+        <dsig:DigestValue>uB7YQJlNOTTcPwNU+tIHKhhWlLGeZhLUwvVUWTDujaM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

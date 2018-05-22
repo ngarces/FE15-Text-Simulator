@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using FE15TextSimulator;
 
 namespace FE15TextSimulator
 {
@@ -20,10 +20,14 @@ namespace FE15TextSimulator
         public static Bitmap importedM;
         public static Bitmap importedR;
 
+        NameList nameList = new NameList();
         
+
         public Form1()
         {
             InitializeComponent();
+
+            List<string> backgrounds = nameList.GetBackgrounds();
 
             pictureBox.Image = new Bitmap(pictureBox.Width, pictureBox.Height);
             comboBox_Left.Items.Add("");
@@ -32,7 +36,7 @@ namespace FE15TextSimulator
             comboBox_Mid.Items.Add("Custom Image");
             comboBox_Right.Items.Add("");
             comboBox_Right.Items.Add("Custom Image");
-            foreach (KeyValuePair<string, string> entry in Names)
+            foreach (KeyValuePair<string, string> entry in nameList.Names)
             {
                 comboBox_Left.Items.Add(entry.Key);
                 comboBox_Mid.Items.Add(entry.Key);
@@ -46,314 +50,6 @@ namespace FE15TextSimulator
             refresh_Picturebox();
         }
 
-        //Holds English names and their corresponding Japanese name used on their portrait file
-        public SortedDictionary<string, string> Names = new SortedDictionary<string, string>()
-        {
-            //Playable Characters
-            {"Alm", "アルム"},
-            {"Alm (Child)", "幼少アルム"},
-            {"Alm (Hero)", "アルム上級"},
-            {"Lukas", "ルカ"},
-            {"Gray", "グレイ"},
-            {"Gray (Child)", "幼少グレイ"},
-            {"Tobin", "ロビン"},
-            {"Tobin (Child)", "幼少ロビン"},
-            {"Faye", "エフィ"},
-            {"Faye (Child)", "幼少エフィ"},
-            {"Kliff", "クリフ"},
-            {"Kliff (Child)", "幼少クリフ"},
-            {"Silque", "シルク"},
-            {"Clair", "クレア"},
-            {"Clive", "クレーベ"},
-            {"Forsyth", "フォルス"},
-            {"Python", "パイソン"},
-            {"Celica", "セリカ"},
-            {"Celica (Child)", "幼少セリカ"},
-            {"Celica (Princess)", "セリカ上級"},
-            {"Boey", "ボーイ"},
-            {"Mae", "メイ"},
-            {"Genny", "ジェニー"},
-            {"Saber", "セーバー"},
-            {"Valbar", "バルボ"},
-            {"Kamui", "カムイ"},
-            {"Leon", "レオ"},
-            {"Luthier", "リュート"},
-            {"Mathilda", "マチルダ"},
-            {"Delthea", "デューテ"},
-            {"Palla", "パオラ"},
-            {"Catria", "カチュア"},
-            {"Atlas", "アトラス"},
-            {"Jesse", "ジェシー"},
-            {"Sonya", "ソニア"},
-            {"Deen", "ディーン"},
-            {"Est", "エスト"},
-            {"Nomah", "ノーマ"},
-            {"Tatiana", "ティータ"},
-            {"Zeke", "ジーク"},
-            {"Conrad", "コンラート"},
-            {"Conrad (Masked)", "仮面の騎士"},
-            {"Mycen", "マイセン"},
-
-            //Amiibo
-            {"Marth", "マルス"},
-            {"Ike", "アイク"},
-            {"Robin", "ルフレ男"},
-            {"Lucina", "ルキナ"},
-            {"Roy", "ロイ"},
-            {"Corrin (Male)", "カムイ男"},
-            {"Corrin (Female)", "カムイ女"},
-
-            //Enemies
-            {"Wolff", "ウォルフ"},
-            {"Gazelle", "ガゼル"},
-            {"Garth", "ガッハ"},
-            {"Gharn", "ガネフ"},
-            {"Garcia", "ガルシア"},
-            {"Greith", "ギース"},
-            {"Cerberus", "ケルベス"},
-            {"Aurum", "ゴールド"},
-            {"Xaizor", "サイゾー"},
-            {"Zakson", "ザクソン"},
-            {"Jerome", "ジェローム"},
-            {"Jamil", "ジャミル"},
-            {"Jedah", "ジュダ"},
-            {"Argentum", "シルバー"},
-            {"Slayde", "スレイダー"},
-            {"Tatarrah", "タタラ"},
-            {"Barth", "ダッハ"},
-            {"Desaix", "ドゼー"},
-            {"Dolk", "ドルク"},
-            {"Nuibaba", "ヌイババ"},
-            {"Hades", "バデス"},
-            {"Fernand", "フェルナン"},
-            {"Blake", "ブライ"},
-            {"Hestia", "ヘステ"},
-            {"Berkut", "ベルクト"},
-            {"Naberius", "ベルレス"},
-            {"Marla", "マーラ"},
-            {"Magnus", "マグナム"},
-            {"Mikhail", "ミカエラ"},
-            {"Mueller", "ミューラー"},
-            {"Rudolf", "ルドルフ"},
-            {"Lawson", "ローソン"},
-            {"Berkut (Posessed)", "異常ベルクト"},
-            {"Brigand Boss", "盗賊頭"},
-            {"Rinea (Witch)", "魔女リネア"},
-
-            //NPCs
-            {"Irma", "イルマ"},
-            {"Fat Merchant", "でっぷり商人"},
-            {"Duma", "ドーマ"},
-            {"Duma (Human)", "ドーマ人間形態"},
-            {"Halcyon", "ハルク"},
-            {"Massena", "マッセナ"},
-            {"Mila", "ミラ"},
-            {"Rinea", "リネア"},
-            {"Old Man", "一般おじいさん"},
-            {"Man", "一般おじさん"},
-            {"Young Man", "一般おにいさん"},
-            {"Young Woman", "一般おねえさん"},
-            {"Woman", "一般おばさん"},
-            {"Celica (Fake)", "偽セリカ"},
-            {"Peddler (Pink)", "商人桃"},
-            {"Peddler (Green)", "商人緑"},
-            {"Peddler (Blue)", "商人青"},
-            {"Girl", "女の子"},
-            {"Scholarly Man", "学者風の男"},
-            {"Conrad (Child)", "幼少コンラート"},
-            {"Flashy Man", "派手な服の男"},
-            {"Brigand B", "盗賊B"},
-            {"Saint", "聖女"},
-            {"Nobleman", "貴族のおじさん"},
-            {"Nobleman B", "貴族のおじさんB"},
-            {"Aristocratic Man", "貴族の老人"},
-            {"Blacksmith", "鍛冶屋"},
-            {"Hermit", "隠者"},
-
-            //Classes
-            {"Archer", "アーチャー"},
-            {"Archer (Blue)", "アーチャー青"},
-            {"Knight", "アーマー"},
-            {"Gold Knight", "ゴールドナイト"},
-            {"Gold Knight (Female)", "ゴールドナイト女"},
-            {"Cleric", "シスター"},
-            {"Cleric (Blue)", "シスター青"},
-            {"Sniper", "スナイパー"},
-            {"Soldier", "ソルジャー"},
-            {"Soldier (Blue)", "ソルジャー青"},
-            {"Cavalier", "ナイト"},
-            {"Cavalier (Female)", "ナイト女"},
-            {"Cavalier (Blue)", "ナイト青"},
-            {"Paladin", "パラディン"},
-            {"Paladin (Female)", "パラディン女"},
-            {"Baron ", "バロン"},
-            {"Falcon Knight", "ファルコンナイト"},
-            {"Pegasus Knight", "ペガサスナイト"},
-            {"Bow Knight", "ボウナイト"},
-            {"Mercenary", "傭兵"},
-            {"Mercenary (Blue) ", "傭兵青"},
-            {"Myrmidon", "剣士"},
-            {"Arcanist", "妖術師"},
-            {"Villager (Female)", "村人女"},
-            {"Villager (Male)", "村人男"},
-            {"Brigand", "盗賊"},
-            {"Cantor", "祈祷師"},
-            {"Priestess", "神官赤"},
-            {"Priestess (Blue)", "神官"},
-            {"Sage (Blue)", "賢者青"},
-
-            //Monsters
-            {"Vesta", "ウェスタ"},
-            {"Gargoyle", "ガーゴイル"},
-            {"Garuda", "ガルーダ"},
-            {"Bonewalker", "スケルトン"},
-            {"Revenant", "ゾンビ"},
-            {"Titan", "タイタン"},
-            {"Dagon", "ダゴン"},
-            {"Deimos", "デイモス"},
-            {"Duma's Apostle", "ドーマの使徒"},
-            {"Dracul", "ドラクル"},
-            {"Necrodragon", "ドラゴンゾンビ"},
-            {"Deathgoyle", "バルログ"},
-            {"Valor", "バロール"},
-            {"Mogall", "ビグル"},
-            {"Fafnir", "ファフナー"},
-            {"Entombed", "マミー"},
-            {"Mila's Servant", "ミラのしもべ"},
-            {"Lich", "リッチー"},
-            {"Guardian", "守護者"},
-            {"Fire Dragon", "火竜"},
-            {"White Dragon", "白竜"},
-            {"The Creation", "造られしもの"},
-
-            //Other
-            {"Shadow Man", "_カゲマン"},
-
-            //DLC
-            {"Emma", "エマ"},
-            {"Randal", "ランド"},
-            {"Shade", "シェイド"},
-            {"Yuzu", "ユズ"},
-            {"Clive (DLC)", "クレーベ2"},
-            {"Mathilda (DLC)", "マチルダ2"},
-            {"Hostages", "リゲル人捕虜"},
-            {"Tomb Lord", "キングマミー"},
-        };
-
-        List<string> playable = new List<string>
-        {
-            "Alm",
-            "Alm (Child)",
-            "Alm (Hero)",
-            "Atlas",
-            "Boey",
-            "Catria",
-            "Celica",
-            "Celica (Child)",
-            "Celica (Princess)",
-            "Clair",
-            "Clive",
-            "Conrad",
-            "Conrad (Masked)",
-            "Corrin (Female)",
-            "Corrin (Male)",
-            "Deen",
-            "Delthea",
-            "Est",
-            "Faye",
-            "Faye (Child)",
-            "Forsyth",
-            "Genny",
-            "Gray",
-            "Gray (Child)",
-            "Ike",
-            "Jesse",
-            "Kamui",
-            "Kliff",
-            "Kliff (Child)",
-            "Leon",
-            "Lucina",
-            "Lukas",
-            "Luthier",
-            "Mae",
-            "Marth",
-            "Mathilda",
-            "Mycen",
-            "Nomah",
-            "Palla",
-            "Python",
-            "Robin",
-            "Roy",
-            "Saber",
-            "Silque",
-            "Sonya",
-            "Tatiana",
-            "Tobin",
-            "Tobin (Child)",
-            "Valbar",
-            "Zeke",
-
-            "Emma",
-            "Randal",
-            "Shade",
-            "Yuzu",
-            "Clive (DLC)",
-            "Mathilda (DLC)"
-        };
-
-        Dictionary<string, string> Expressions = new Dictionary<string, string>()
-        {
-            {"Normal", "通常"},
-            {"Cool", "キメ"},
-            {"Anger", "怒"},
-            {"Sadness", "悲"},
-            {"Smile", "笑"},
-            {"Pain", "苦"},
-            {"Surprised", "驚"},
-            {"Special", "特殊1"},
-            {"Posessed", "幽霊"},
-        };
-
-        List<string> backgrounds = new List<string>
-        {
-            "Altar of Duma",
-            "Dolth Keep",
-            "Duma Temple",
-            "Duma",
-            "Dungeon",
-            "Forest Crossroads",
-            "Forest Village",
-            "Furia Harbor Entrance",
-            "Furia Harbor Square",
-            "Mila Shrine",
-            "Mila Temple Exterior",
-            "Mycen's House",
-            "Novis Greatport",
-            "Pirate Throne Interior",
-            "Plains 1",
-            "Plains 2",
-            "Plains 3",
-            "Priory",
-            "Prison 1",
-            "Prison 2",
-            "Ram Valley",
-            "Ram Village Entrance",
-            "Ram Village Flower Patch",
-            "Ram Village Ourskirts",
-            "Sage's Hamlet",
-            "Ship 1",
-            "Ship 2",
-            "Sluice Gate Interior",
-            "Sluice Gate",
-            "Swamp",
-            "Thabes Labyrinth",
-            "Villa",
-            "War Room",
-            "Zofia Castle Balcony",
-            "Zofia Castle Exterior",
-            "Zofia Castle Interior",
-            "Zofian Coast",
-        };
 
         private void button_Save_Click(object sender, EventArgs e)
         {
@@ -366,6 +62,8 @@ namespace FE15TextSimulator
 
         private void comboBox_Left_SelectedIndexChanged(object sender, EventArgs e)
         {
+            List<string> playable = nameList.GetPlayable();
+
             comboBox_ExpressionsLeft.Items.Clear();
             if (string.IsNullOrEmpty(comboBox_Left.Text))
             {
@@ -389,9 +87,9 @@ namespace FE15TextSimulator
                 return;
             }
 
-            foreach (KeyValuePair<string, string> entry in Expressions)
+            foreach (KeyValuePair<string, string> entry in nameList.Expressions)
             {
-                string resource = Names[comboBox_Left.Text] + "_bu_" + entry.Value;
+                string resource = nameList.Names[comboBox_Left.Text] + "_bu_" + entry.Value;
                 if (playable.Contains(comboBox_Left.Text))
                     resource += "_";
                 if (FE15TextSimulator.Properties.Resources.ResourceManager.GetObject(resource) != null)
@@ -403,6 +101,8 @@ namespace FE15TextSimulator
 
         private void comboBox_Mid_SelectedIndexChanged(object sender, EventArgs e)
         {
+            List<string> playable = nameList.GetPlayable();
+            
             comboBox_ExpressionsMid.Items.Clear();
             if (string.IsNullOrEmpty(comboBox_Mid.Text))
             {
@@ -425,9 +125,9 @@ namespace FE15TextSimulator
                 refresh_Picturebox();
                 return;
             }
-            foreach (KeyValuePair<string, string> entry in Expressions)
+            foreach (KeyValuePair<string, string> entry in nameList.Expressions)
             {
-                string resource = Names[comboBox_Mid.Text] + "_bu_" + entry.Value;
+                string resource = nameList.Names[comboBox_Mid.Text] + "_bu_" + entry.Value;
                 if (playable.Contains(comboBox_Mid.Text))
                     resource += "_";
                 if (FE15TextSimulator.Properties.Resources.ResourceManager.GetObject(resource) != null)
@@ -438,6 +138,8 @@ namespace FE15TextSimulator
 
         private void comboBox_Right_SelectedIndexChanged(object sender, EventArgs e)
         {
+            List<string> playable = nameList.GetPlayable();
+            
             comboBox_ExpressionsRight.Items.Clear();
             if (string.IsNullOrEmpty(comboBox_Right.Text))
             {
@@ -460,9 +162,9 @@ namespace FE15TextSimulator
                 refresh_Picturebox();
                 return;
             }
-            foreach (KeyValuePair<string, string> entry in Expressions)
+            foreach (KeyValuePair<string, string> entry in nameList.Expressions)
             {
-                string resource = Names[comboBox_Right.Text] + "_bu_" + entry.Value;
+                string resource = nameList.Names[comboBox_Right.Text] + "_bu_" + entry.Value;
                 if (playable.Contains(comboBox_Right.Text))
                     resource += "_";
                 if (FE15TextSimulator.Properties.Resources.ResourceManager.GetObject(resource) != null)
@@ -505,6 +207,7 @@ namespace FE15TextSimulator
         {
             Bitmap bmp = new Bitmap(pictureBox.Image);
             Graphics g = Graphics.FromImage(bmp);
+            List<string> playable = nameList.GetPlayable();
 
             g.Clear(Color.Transparent);
 
@@ -517,7 +220,7 @@ namespace FE15TextSimulator
 
                 if (comboBox_Left.Text != "Custom Image")
                 {
-                    string name = Names[comboBox_Left.Text] + "_bu_" + Expressions[comboBox_ExpressionsLeft.Text];
+                    string name = nameList.Names[comboBox_Left.Text] + "_bu_" + nameList.Expressions[comboBox_ExpressionsLeft.Text];
                     if (playable.Contains(comboBox_Left.Text))
                         name += "_";    //Playable characters have an extra underscore at the end of their file names
                     portrait = (Bitmap)FE15TextSimulator.Properties.Resources.ResourceManager.GetObject(name);
@@ -536,7 +239,7 @@ namespace FE15TextSimulator
 
                 if (comboBox_Mid.Text != "Custom Image")
                 {
-                    string name = Names[comboBox_Mid.Text] + "_bu_" + Expressions[comboBox_ExpressionsMid.Text];
+                    string name = nameList.Names[comboBox_Mid.Text] + "_bu_" + nameList.Expressions[comboBox_ExpressionsMid.Text];
                     if (playable.Contains(comboBox_Mid.Text))
                         name += "_";    //Playable characters have an extra underscore at the end of their file names
                     portrait = (Bitmap)FE15TextSimulator.Properties.Resources.ResourceManager.GetObject(name);
@@ -555,7 +258,7 @@ namespace FE15TextSimulator
 
                 if (comboBox_Right.Text != "Custom Image")
                 {
-                    string name = Names[comboBox_Right.Text] + "_bu_" + Expressions[comboBox_ExpressionsRight.Text];
+                    string name = nameList.Names[comboBox_Right.Text] + "_bu_" + nameList.Expressions[comboBox_ExpressionsRight.Text];
                     if (playable.Contains(comboBox_Right.Text))
                         name += "_";    //Playable characters have an extra underscore at the end of their file names
                     portrait = (Bitmap)FE15TextSimulator.Properties.Resources.ResourceManager.GetObject(name);
@@ -572,7 +275,7 @@ namespace FE15TextSimulator
             {
                 g.DrawImage(FE15TextSimulator.Properties.Resources.TextBox, 0, 151);
 
-                var font = new Font("FOT-Chiaro Std B", 15, FontStyle.Bold, GraphicsUnit.Pixel);
+                Font font = new Font("FOT-Chiaro Std B", 14.9f, GraphicsUnit.Pixel);
                 g.TextRenderingHint = TextRenderingHint.AntiAlias;
                 g.DrawString(richTextBox_Text1.Text, font, Brushes.Bisque, new Point(28, 188));
                 g.DrawString(richTextBox_Text2.Text, font, Brushes.Bisque, new Point(28, 208));
@@ -651,7 +354,7 @@ namespace FE15TextSimulator
                         backgroundImage = new Bitmap(ofd.FileName);
                     else
                     {
-                        comboBox_Right.SelectedIndex = -1;
+                        comboBox_Background.SelectedIndex = 0;
                         backgroundImage = null;
                     }
                 }
