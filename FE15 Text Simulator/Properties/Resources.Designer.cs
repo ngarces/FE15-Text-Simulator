@@ -9483,6 +9483,16 @@ namespace FE15TextSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ユズ_bu_驚_ {
+            get {
+                object obj = ResourceManager.GetObject("ユズ_bu_驚_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ランド_bu_キメ_ {
             get {
                 object obj = ResourceManager.GetObject("ランド_bu_キメ_", resourceCulture);
